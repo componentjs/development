@@ -25,3 +25,5 @@ do
     url="https://github.com/componentjs/${i}"
     git submodule add $url
 done
+
+git submodule add https://github.com/component/component.github.io
