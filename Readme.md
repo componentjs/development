@@ -7,7 +7,7 @@ It's the master project and contains all modules which are needed for [component
 
 ```
 git clone https://github.com/componentjs/development.git
-./git-submodules.sh init
+git submodule update --init
 ./init-npm.sh
 ```
 
