@@ -1,7 +1,7 @@
 modules[0]="build.js"
 modules[1]="builder2.js"
 modules[2]="builder-autoprefixer"
-modules[3]="consoler.js"
+modules[3]="console.js"
 modules[4]="downloader.js"
 modules[5]="flatten.js"
 modules[6]="ls.js"

@@ -52,3 +52,6 @@
 [submodule "component.github.io"]
 	path = component.github.io
 	url = https://github.com/component/component.github.io
+[submodule "validator.js"]
+	path = validator.js
+	url = https://github.com/componentjs/validator.js
