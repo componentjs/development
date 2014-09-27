@@ -1,0 +1,54 @@
+[submodule "builder2.js"]
+	path = builder2.js
+	url = https://github.com/componentjs/builder2.js
+[submodule "builder-autoprefixer"]
+	path = builder-autoprefixer
+	url = https://github.com/componentjs/builder-autoprefixer
+[submodule "downloader.js"]
+	path = downloader.js
+	url = https://github.com/componentjs/downloader.js
+[submodule "flatten.js"]
+	path = flatten.js
+	url = https://github.com/componentjs/flatten.js
+[submodule "ls.js"]
+	path = ls.js
+	url = https://github.com/componentjs/ls.js
+[submodule "manifest.js"]
+	path = manifest.js
+	url = https://github.com/componentjs/manifest.js
+[submodule "outdated.js"]
+	path = outdated.js
+	url = https://github.com/componentjs/outdated.js
+[submodule "pin.js"]
+	path = pin.js
+	url = https://github.com/componentjs/pin.js
+[submodule "remotes.js"]
+	path = remotes.js
+	url = https://github.com/componentjs/remotes.js
+[submodule "require2"]
+	path = require2
+	url = https://github.com/componentjs/require2
+[submodule "resolver.js"]
+	path = resolver.js
+	url = https://github.com/componentjs/resolver.js
+[submodule "search.js"]
+	path = search.js
+	url = https://github.com/componentjs/search.js
+[submodule "update.js"]
+	path = update.js
+	url = https://github.com/componentjs/update.js
+[submodule "watcher.js"]
+	path = watcher.js
+	url = https://github.com/componentjs/watcher.js
+[submodule "component"]
+	path = component
+	url = https://github.com/componentjs/component
+[submodule "guide"]
+	path = guide
+	url = https://github.com/componentjs/guide
+[submodule "spec"]
+	path = spec
+	url = https://github.com/componentjs/spec
+[submodule "component.github.io"]
+	path = component.github.io
+	url = https://github.com/component/component.github.io
