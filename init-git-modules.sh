@@ -13,7 +13,7 @@ modules[11]="require2"
 modules[12]="resolver.js"
 modules[13]="search.js"
 modules[14]="update.js"
-modules[15]="validtor.js"
+modules[15]="validator.js"
 modules[16]="watcher.js"
 modules[17]="component"
 
