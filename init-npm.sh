@@ -20,7 +20,7 @@ cd ..
 
 cd downloader.js
 npm link component-consoler
-npm link remotes
+npm link component-remotes
 npm install
 npm link
 cd ..
@@ -31,6 +31,7 @@ npm link component-consoler
 npm link component-validator
 npm link component-flatten
 npm link component-downloader
+npm link component-remotes
 npm install
 npm link
 cd ..
@@ -72,7 +73,7 @@ cd ..
 
 cd build.js
 npm link component-builder
-npm link builder-autoprefixer
+npm link component-builder-autoprefixer
 npm link component-resolver
 npm install
 npm link
@@ -88,7 +89,7 @@ cd ..
 cd outdated.js
 npm link component-consoler
 npm link component-flatten
-npm link remotes
+npm link component-remotes
 npm install 
 npm link
 cd ..
@@ -97,7 +98,7 @@ cd ..
 cd pin.js
 npm link component-consoler
 npm link component-flatten
-npm link remotes
+npm link component-remotes
 npm link component-resolver
 npm install 
 npm link
@@ -114,7 +115,7 @@ cd ..
 cd update.js
 npm link component-consoler
 npm link component-flatten
-npm link remotes
+npm link component-remotes
 npm link component-resolver
 npm install
 npm link
@@ -138,7 +139,7 @@ npm link component-resolver
 npm link component-search2
 npm link component-updater
 npm link component-watcher
-npm link remotes
+npm link component-remotes
 npm install
 npm link
 cd ..
