@@ -29,21 +29,28 @@ if [ "$1" == "init" ]; then
 
     git submodule add https://github.com/component/component.github.io
 
-elif [ "$1" == "clean" ]; then
+elif [ "$1" == "clean-node_modules" ]; then
     for i in ${modules[@]}
     do
         rm -rf "$i/node_modules"
     done
 
 elif [ "$1" == "publish" ]; then
-    changeModules=`git status | grep -v "new commits" | grep modified: | awk '{ printf "%s ", $2 }'`
+    changeModules=`git status | grep "(new commits)" | awk '{ printf "%s ", $2 }'`
     for i in ${changeModules[@]}
     do
         echo "cd $i && npm publish && cd .."
     done
 
+elif [ "$1" == "push" ]; then
+    changeModules=`git status | grep "(new commits)" | awk '{ printf "%s ", $2 }'`
+    for i in ${changeModules[@]}
+    do
+        echo "cd $i && git push && cd .."
+    done
+
 elif [ "$1" == "commit" ]; then
-    changeModules=`git status | grep -v "new commits" | grep modified: | awk '{ printf "%s ", $2 }'`
+    changeModules=`git status | grep "modified content" | grep modified: | awk '{ printf "%s ", $2 }'`
     echo "copy and paste these lines (don't forget last line):"
     echo
     for i in ${changeModules[@]}
@@ -51,7 +58,16 @@ elif [ "$1" == "commit" ]; then
         echo "cd $i && git commit -m \"$2\" && cd .."
     done
 
+elif [ "$1" == "test" ]; then
+    changeModules=`git status | grep -E 'modified content|foo' | grep "modified:" | awk '{ printf "%s ", $2 }'`
+    echo "copy and paste these lines (don't forget last line):"
+    echo
+    for i in ${changeModules[@]}
+    do
+        echo "cd $i && npm test && cd .."
+    done
+
 else
-    echo "missing arg: {init|clean|publish|commit <message>}"
+    echo "missing arg: {init|clean|test|publish|commit <message>}"
 fi
 

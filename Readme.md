@@ -12,7 +12,7 @@ git submodule update --init
 ```
 
 To clean the node_modules of all modules run
-`./git-submodules.sh clean`
+`./git-submodules.sh clean-node_modules`
 
 ### Developing
 
