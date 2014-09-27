@@ -27,12 +27,10 @@ cd ..
 
 
 cd resolver.js
-npm link     
 npm link component-consoler
 npm link component-validator
 npm link component-flatten
 npm link component-downloader
-npm link remotes
 npm install
 npm link
 cd ..
