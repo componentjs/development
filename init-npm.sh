@@ -60,7 +60,7 @@ cd builder2.js
 npm link component-flatten
 npm link component-manifest
 npm link component-require2
-npm link comoponent-resolver
+npm link component-resolver
 npm install
 npm link
 cd ..
