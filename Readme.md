@@ -7,12 +7,15 @@ It's the master project and contains all modules which are needed for [component
 
 ```
 git clone https://github.com/componentjs/development.git
-./init-git-modules.sh
+./git-submodules.sh init
 ./init-npm.sh
 ```
 
+To clean the node_modules of all modules run
+`./git-submodules.sh clean`
 
 ### Developing
 run `git submodule update` to update
 
 You should use node 0.11, to avoid build steps for all the modules.
+
