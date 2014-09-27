@@ -55,3 +55,6 @@
 [submodule "validator.js"]
 	path = validator.js
 	url = https://github.com/componentjs/validator.js
+[submodule "console.js"]
+	path = console.js
+	url = https://github.com/componentjs/console.js
