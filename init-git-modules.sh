@@ -23,7 +23,7 @@ modules[32]="spec"
 for i in ${modules[@]}
 do
     url="https://github.com/componentjs/${i}"
-    git submodule add $url
+    git submodule add $url || echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FAILED"
 done
 
 git submodule add https://github.com/component/component.github.io
