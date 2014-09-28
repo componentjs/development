@@ -1,19 +1,19 @@
 cd console.js
-npm install
+if [ "$1" == "install" ]; then npm install; fi
 npm link
 cd ..
 
 
 cd validator.js 
 npm link component-consoler
-npm install
+if [ "$1" == "install" ]; then npm install; fi
 npm link
 cd ..
 
 
 cd remotes.js
 npm link component-validator
-npm install
+if [ "$1" == "install" ]; then npm install; fi
 npm link
 cd ..
 
@@ -21,7 +21,7 @@ cd ..
 cd downloader.js
 npm link component-consoler
 npm link component-remotes
-npm install
+if [ "$1" == "install" ]; then npm install; fi
 npm link
 cd ..
 
@@ -32,25 +32,25 @@ npm link component-validator
 npm link component-flatten
 npm link component-downloader
 npm link component-remotes
-npm install
+if [ "$1" == "install" ]; then npm install; fi
 npm link
 cd ..
 
 
 cd require2
-npm install
+if [ "$1" == "install" ]; then npm install; fi
 npm link
 cd ..
 
 
 cd manifest.js
 npm link component-resolver
-npm install
+if [ "$1" == "install" ]; then npm install; fi
 npm link
 cd ..
 
 cd flatten.js
-npm install
+if [ "$1" == "install" ]; then npm install; fi
 npm link
 cd ..
 
@@ -60,13 +60,13 @@ npm link component-flatten
 npm link component-manifest
 npm link component-require2
 npm link component-resolver
-npm install
+if [ "$1" == "install" ]; then npm install; fi
 npm link
 cd ..
 
 
 cd builder-autoprefixer
-npm install
+if [ "$1" == "install" ]; then npm install; fi
 npm link
 cd ..
 
@@ -75,13 +75,13 @@ cd build.js
 npm link component-builder
 npm link component-builder-autoprefixer
 npm link component-resolver
-npm install
+if [ "$1" == "install" ]; then npm install; fi
 npm link
 cd ..
 
 
 cd ls.js
-npm install 
+if [ "$1" == "install" ]; then npm install; fi
 npm link
 cd ..
 
@@ -90,7 +90,7 @@ cd outdated.js
 npm link component-consoler
 npm link component-flatten
 npm link component-remotes
-npm install 
+if [ "$1" == "install" ]; then npm install; fi
 npm link
 cd ..
 
@@ -100,14 +100,14 @@ npm link component-consoler
 npm link component-flatten
 npm link component-remotes
 npm link component-resolver
-npm install 
+if [ "$1" == "install" ]; then npm install; fi
 npm link
 cd ..
 
 
 cd search.js
 npm link component-consoler
-npm install
+if [ "$1" == "install" ]; then npm install; fi
 npm link
 cd ..
 
@@ -117,13 +117,13 @@ npm link component-consoler
 npm link component-flatten
 npm link component-remotes
 npm link component-resolver
-npm install
+if [ "$1" == "install" ]; then npm install; fi
 npm link
 cd ..
 
 
 cd watcher.js
-npm install
+if [ "$1" == "install" ]; then npm install; fi
 npm link
 cd ..
 
@@ -140,6 +140,6 @@ npm link component-search2
 npm link component-updater
 npm link component-watcher
 npm link component-remotes
-npm install
+if [ "$1" == "install" ]; then npm install; fi
 npm link
 cd ..

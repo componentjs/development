@@ -1,5 +1,5 @@
 This repository is for component developers.  
-It's the master project and contains all modules which are needed for [component](https://github.com/componentjs/component).
+It's the master project and contains all modules which you need to build [component](https://github.com/componentjs/component).
 
 # Usage
 
@@ -8,13 +8,21 @@ It's the master project and contains all modules which are needed for [component
 ```
 git clone https://github.com/componentjs/development.git
 git submodule update --init
-./init-npm.sh
+git submodule foreach git checkout master
+./init-npm.sh install
 ```
+
+If you want to re-npm-link without an `npm install` just run:
+
+`./init-npm.sh`
 
 To clean the node_modules of all modules run
 `./git-submodules.sh clean-node_modules`
 
 ### Developing
+
+To update all submodules run: `git submodule update --remote --rebase`  
+It's important to use `--rebase` otherwise you get a __detached HEAD__ problem.
 
 You should use node 0.11, to avoid build steps for all the modules.
 
@@ -25,7 +33,5 @@ You may want to use `git submodule foreach git status` or any other combination 
 - `git submodule foreach git diff`
 
 If you want to commit your changes, you need to commit them first wihtin each submodule. At the end you can commit the references within the master project.
-
-To update the submodules run `git submodule update --remote --rebase`.
 
 For more information visit [git submodules tips](https://git.wiki.kernel.org/index.php/GitSubmoduleTutorial)
