@@ -1,63 +1,84 @@
 [submodule "builder2.js"]
+	branch = master
 	path = builder2.js
 	url = https://github.com/componentjs/builder2.js
 [submodule "builder-autoprefixer"]
+	branch = master
 	path = builder-autoprefixer
 	url = https://github.com/componentjs/builder-autoprefixer
 [submodule "downloader.js"]
+	branch = master
 	path = downloader.js
 	url = https://github.com/componentjs/downloader.js
 [submodule "flatten.js"]
+	branch = master
 	path = flatten.js
 	url = https://github.com/componentjs/flatten.js
 [submodule "ls.js"]
+	branch = master
 	path = ls.js
 	url = https://github.com/componentjs/ls.js
 [submodule "manifest.js"]
+	branch = master
 	path = manifest.js
 	url = https://github.com/componentjs/manifest.js
 [submodule "outdated.js"]
+	branch = master
 	path = outdated.js
 	url = https://github.com/componentjs/outdated.js
 [submodule "pin.js"]
+	branch = master
 	path = pin.js
 	url = https://github.com/componentjs/pin.js
 [submodule "remotes.js"]
+	branch = master
 	path = remotes.js
 	url = https://github.com/componentjs/remotes.js
 [submodule "require2"]
+	branch = master
 	path = require2
 	url = https://github.com/componentjs/require2
 [submodule "resolver.js"]
+	branch = master
 	path = resolver.js
 	url = https://github.com/componentjs/resolver.js
 [submodule "search.js"]
+	branch = master
 	path = search.js
 	url = https://github.com/componentjs/search.js
 [submodule "update.js"]
+	branch = master
 	path = update.js
 	url = https://github.com/componentjs/update.js
 [submodule "watcher.js"]
+	branch = master
 	path = watcher.js
 	url = https://github.com/componentjs/watcher.js
 [submodule "component"]
+	branch = master
 	path = component
 	url = https://github.com/componentjs/component
 [submodule "guide"]
+	branch = master
 	path = guide
 	url = https://github.com/componentjs/guide
 [submodule "spec"]
+	branch = master
 	path = spec
 	url = https://github.com/componentjs/spec
 [submodule "component.github.io"]
+	branch = master
 	path = component.github.io
 	url = https://github.com/component/component.github.io
 [submodule "validator.js"]
+	branch = master
 	path = validator.js
 	url = https://github.com/componentjs/validator.js
 [submodule "console.js"]
+	branch = master
 	path = console.js
 	url = https://github.com/componentjs/console.js
 [submodule "build.js"]
+	branch = master
 	path = build.js
 	url = https://github.com/componentjs/build.js
