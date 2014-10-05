@@ -35,16 +35,9 @@ elif [ "$1" == "clean-node_modules" ]; then
         rm -rf "$i/node_modules"
     done
 
-elif [ "$1" == "publish" ]; then
-    changeModules=`git status | grep "(new commits)" | awk '{ printf "%s ", $2 }'`
-    for i in ${changeModules[@]}
-    do
-        echo "cd $i && npm publish && cd .."
-    done
 
 elif [ "$1" == "push" ]; then
-    changeModules=`git status | grep "(new commits)" | awk '{ printf "%s ", $2 }'`
-    for i in ${changeModules[@]}
+    for i in ${modules[@]}
     do
         echo "cd $i && git push && cd .."
     done
@@ -59,15 +52,14 @@ elif [ "$1" == "commit" ]; then
     done
 
 elif [ "$1" == "test" ]; then
-    changeModules=`git status | grep -E 'modified content|foo' | grep "modified:" | awk '{ printf "%s ", $2 }'`
     echo "copy and paste these lines (don't forget last line):"
     echo
-    for i in ${changeModules[@]}
+    for i in ${modules[@]}
     do
         echo "cd $i && npm test && cd .."
     done
 
 else
-    echo "missing arg: {init|clean|test|publish|commit <message>}"
+    echo "missing arg: {git-init|clean|test|commit <message>}"
 fi
 
