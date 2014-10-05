@@ -73,7 +73,7 @@ cd ..
 
 cd build.js
 npm link component-builder
-npm link component-builder-autoprefixer
+npm link builder-autoprefixer
 npm link component-resolver
 if [ "$1" == "install" ]; then npm install; fi
 npm link
