@@ -12,12 +12,12 @@ git submodule foreach git checkout master
 ./init-npm.sh install
 ```
 
+To clean the node_modules of all modules run
+`./git-submodules.sh clean-node_modules`
+
 If you want to re-npm-link without an `npm install` just run:
 
 `./init-npm.sh`
-
-To clean the node_modules of all modules run
-`./git-submodules.sh clean-node_modules`
 
 ### Developing
 
